@@ -1,2 +1,1 @@
 # LearnLogix
-LearnLogix is a web-based learning management system that enables instructors to create courses, students to enroll and track progress, and admins to manage users and content. With features like enrollment approval, in-course marks, file sharing, and dashboards, it streamlines online learning.
