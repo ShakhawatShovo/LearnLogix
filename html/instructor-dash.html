@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instructor Dashboard</title>
+  <link rel="stylesheet" href="../css/instructor-dash.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <header class="header">
+    <h1>Instructor Dashboard</h1>
+    <nav>
+      <a href="#" class="btn" id="logout" onclick="logout()">Logout</a>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="content">
+      <div class="profile-btn-container">
+      <a href="#" id="viewProfileBtn" class="btn view-profile-btn">View Profile</a>
+  </div>
+      <h2>Welcome, <span id="instructorName">Instructor</span>!</h2>
+      <h4><span id="instructorId" style="display:none;"></span></h4>
+      <p>Manage your assigned courses and track student performance.</p>
+      
+      <h3>Your Courses</h3>
+      <div id="course-list">Loading courses...</div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <i class="fas fa-graduation-cap"></i>
+        <h3>Learn<span>Logix</span></h3>
+      </div>
+      <div class="footer-links">
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2025 LearnLogix. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="../javascript/instructor-dash.js"></script>
+</body>
+</html>

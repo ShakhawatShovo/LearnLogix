@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Catalog</title>
+  <link rel="stylesheet" href="../css/courses.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <h1>Course Catalog</h1>
+    </div>
+    <nav class="nav-buttons">
+      <a href="student-dash.html" class="btn dashboard-btn">Dashboard</a>
+      <a href="#" class="btn" id="logout" onclick="logout()">Logout</a>
+    </nav>
+  </header>
+  <main class="main-content">
+    <h2>Available Courses</h2>
+    <div id="course-list" class="course-list">
+      <!-- Courses will be dynamically loaded here -->
+    </div>
+  </main>
+  <script src="../javascript/courses.js"></script>
+</body>
+</html>

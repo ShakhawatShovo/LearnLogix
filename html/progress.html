@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progress Tracker</title>
+  <link rel="stylesheet" href="../css/progress.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <h1>Progress Tracker</h1>
+    </div>
+    <nav class="nav-buttons">
+      <a href="student-dash.html" class="btn dashboard-btn">Dashboard</a>
+      <a href="index.html" class="btn logout-btn" onclick="logout()">Logout</a>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <h2>Welcome, <span id="studentName">Student</span></h2>
+    <p>Your overall learning progress is visualized below:</p>
+
+    <div class="charts-container">
+      <!-- Course Completion Chart -->
+      <div class="chart-card">
+        <h3>Course Completion</h3>
+        <canvas id="completionChart"></canvas>
+      </div>
+
+      <!-- Grades Chart -->
+      <div class="chart-card">
+        <h3>Grades Distribution</h3>
+        <canvas id="gradesChart"></canvas>
+      </div>
+    </div>
+  </main>
+
+  
+
+  <script src="../javascript/progress.js"></script>
+</body>
+</html>

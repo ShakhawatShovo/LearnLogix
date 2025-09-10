@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../css/admin-dash.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header class="header">
+        <h1>Admin Dashboard</h1>
+        <div class="header-right">
+            <button onclick="logout()" class="btn">Logout</button>
+            <a href="create-course.html" class="btn">Create Course</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <button onclick="showStats()" class="btn">Dashboard</button>
+            <button onclick="showStudents()" class="btn">Students</button>
+            <button onclick="showInstructors()" class="btn">Instructors</button>
+            <button onclick="showCourses()" class="btn">Courses</button>
+            <button onclick="showEnrollmentRequests()" class="btn">Enrollment Requests</button>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <section id="stats-section">
+                <h2>Statistics</h2>
+                <div class="stat-boxes">
+                    <button class="stat-box" onclick="showStudents()">
+                        <h3>Total Students</h3>
+                        <p id="total-students">0</p>
+                    </button>
+                    <button class="stat-box" onclick="showInstructors()">
+                        <h3>Total Instructors</h3>
+                        <p id="total-instructors">0</p>
+                    </button>
+                    <button class="stat-box" onclick="showCourses()">
+                        <h3>Total Courses</h3>
+                        <p id="total-courses">0</p>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Student List -->
+            <section id="student-section" class="hidden">
+                <h2>Student List</h2>
+                <div id="student-list"></div>
+            </section>
+
+            <!-- Instructor List -->
+            <section id="instructor-section" class="hidden">
+                <h2>Instructor List</h2>
+                <div id="instructor-list"></div>
+            </section>
+
+            <!-- Course List -->
+            <section id="course-section" class="hidden">
+                <h2>Course List</h2>
+                <div id="course-list"></div>
+            </section>
+
+            <!-- Enrollment Requests -->
+            <section id="enrollment-section" class="hidden">
+                <h2>Pending Enrollment Requests</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Course</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="requests-table">
+                        <!-- Enrollment requests will be loaded here -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+<footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <i class="fas fa-graduation-cap"></i>
+        <h3>Learn<span>Logix</span></h3>
+      </div>
+      <div class="footer-links">
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2025 LearnLogix. All rights reserved.</p>
+    </div>
+  </footer>
+    <script src="../javascript/admin.js"></script>
+    <script src="../javascript/notification.js"></script>
+</body>
+</html>

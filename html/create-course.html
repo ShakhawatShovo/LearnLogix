@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/create-course.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Manage Courses</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">LearnLogix</div>
+        <nav>
+            <a href="admin-dash.html">Dashboard</a>
+            <!-- <a href="courses.html">View Courses</a> -->
+            <!-- <a href="index.html" class="logout-btn">Logout</a> -->
+            <button onclick="logout()"class="logout-btn">Logout</button>
+        </nav>
+    </header>
+
+    <!-- Course Creation Form -->
+    
+    <form id="courseForm">
+        <input type="text" id="title" placeholder="Course Title" required />
+        <textarea id="description" placeholder="Course Description" required></textarea>
+        
+        <!-- Instructor ID input
+        <input type="number" id="instructorId" placeholder="Instructor ID" min="314159" required />
+         -->
+        <select id="instructorSelect" required>
+            <option value="">Select Instructor</option>
+        </select>
+
+        <button type="submit">Create Course</button>
+    </form>
+
+    <script src="../javascript/create-course.js"></script>
+</body>
+</html>

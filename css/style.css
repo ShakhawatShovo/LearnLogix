@@ -1,0 +1,47 @@
+/* Add to your styles.css */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 25px;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transform: translateX(200%);
+    transition: transform 0.3s ease;
+  }
+  
+  .notification.show {
+    transform: translateX(0);
+  }
+  
+  .notification.success {
+    background-color: #4CAF50;
+  }
+  
+  .notification.error {
+    background-color: #F44336;
+  }
+  
+  .notification.warning {
+    background-color: #FFC107;
+    color: #333;
+  }
+  
+  .notification i {
+    font-size: 1.2rem;
+  }
+  
+  .notification-close {
+    margin-left: 15px;
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  
+  .notification-close:hover {
+    opacity: 1;
+  }
